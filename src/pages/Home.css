@@ -1,0 +1,154 @@
+:root {
+  --clr-border: #868686;
+}
+
+.home-container {
+  display: flex;
+  margin: 30px 20px;
+  gap: 5vw;
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column-reverse;
+  }
+}
+
+/* 
+Todo Container
+*/
+
+.todo-container {
+  flex-basis: 60%;
+}
+
+.todo-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.todo-top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 5px;
+}
+
+.todo-search {
+  display: flex;
+  padding: 4px 10px;
+  border: 2px solid var(--clr-border);
+  border-radius: 20px;
+  align-items: center;
+  gap: 5px;
+}
+
+.todo-search input {
+  outline: none;
+  border: none;
+}
+
+.todo-search svg {
+  color: var(--clr-border);
+}
+
+.todo-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.todo-table th {
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 7px;
+  text-align: left;
+  font-size: 13.75px;
+  font-weight: 500;
+}
+
+.table-title {
+  width: 100%;
+}
+
+.table-type-1 {
+  min-width: 75px;
+}
+
+@media (max-width: 600px) {
+  .table-type-1 {
+    min-width: 65px;
+  }
+}
+@media (max-width: 400px) {
+  .todo-table th {
+    font-size: 13px;
+  }
+  .table-type-1 {
+    min-width: 55px;
+  }
+}
+
+@media (max-width: 350px) {
+  .table-type-1 {
+    min-width: 50px;
+  }
+}
+
+.todo-table th:nth-child(1) {
+  border-left: 1px solid var(--clr-border);
+}
+.todo-table th:nth-child(4) {
+  border-right: 1px solid var(--clr-border);
+}
+
+.todo-table td {
+  border-bottom: 1px solid var(--clr-border);
+  padding: 5px;
+}
+
+.todo-table td:nth-child(4n + 1) {
+  border-left: 1px solid var(--clr-border);
+}
+.todo-table td:nth-child(4n + 4) {
+  border-right: 1px solid var(--clr-border);
+  cursor: pointer;
+  position: relative;
+}
+.todo-table td:nth-child(4n + 4):hover {
+  color: #666666;
+}
+
+.btn-border {
+  padding: 3px;
+  text-align: center;
+  border: 1px solid var(--clr-border);
+}
+
+/* 
+User Container
+*/
+
+.user-container {
+  flex-basis: 40%;
+}
+
+.user-heading {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.user-box {
+  padding: 15px 12px;
+  border: 1px solid var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.user-content {
+  display: flex;
+}
+.user-left {
+  min-width: 100px;
+}
