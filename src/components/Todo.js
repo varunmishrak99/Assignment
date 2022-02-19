@@ -16,7 +16,7 @@ const Todo = () => {
     }
 
     const getUser = async (todo) => {
-        const res = await fetch(`https://jsonplaceholder.typicode.com/users/${todo.id}`);
+        const res = await fetch(`https://jsonplaceholder.typicode.com/users/${todo.userId}`);
         const data = await res.json();
         setTodo(todo);
         setUser(data);
